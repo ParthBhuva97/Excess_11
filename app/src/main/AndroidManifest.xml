@@ -13,10 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADPractical11_20012011013"
         tools:targetApi="31">
+        <activity
+            android:name=".NotesViewActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <receiver
             android:name=".AlarmBroadcastReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
 
         <activity
             android:name=".NoteViewActivity"
